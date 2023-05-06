@@ -1,0 +1,106 @@
+/*|| General Styles*/
+
+/*adds Blanks Script Font*/
+@font-face {
+    font-family: "Blanks Script Font";
+    src: url(./BlanksscriptpersonaluseBdit-jEM6O.otf)
+}
+
+* {
+    background-color: #FCFFE7;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Blanks Script Font";
+    font-size: 200%;
+}
+
+/*|| Header Styles*/
+
+header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5px;
+    border-bottom: 2px black solid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#home {
+    font-size: 48px;
+    display: flex;
+    align-self: center;
+    font-family: "Blanks Script Font";
+}
+
+/*|| Nave Bar Styles*/
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: right;
+    list-style-type: none;
+} 
+
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #E0D8B0;
+}
+
+nav a.active {
+    background-color:#E0D8B0;
+    color: black;
+}
+
+/*||Section & Article Styles*/
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+    border-bottom: 2px black solid;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+    border-bottom: 2px black solid;
+}
+
+/*|| Section 1*/
+
+
+#spotify {
+    width:50%;
+    height: 500px;
+    display: block;
+    align-self: center;
+}
+
+/*|| Section 2*/
+
+
+/*||Footer Styles*/
+
+/*||Accessibility Styles*/
+
