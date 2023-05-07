@@ -19,7 +19,8 @@ h3 {
 /*adds Blanks Script Font*/
 @font-face {
     font-family: "Blanks Script Font";
-    src: url(./BlanksscriptpersonaluseBdit-jEM6O.otf)
+    src: url(./BlanksscriptpersonaluseBdit-jEM6O.otf);
+    font-size: 200%;
 }
 
 * {
@@ -100,7 +101,7 @@ nav a.active {
     color: black;
 }
 
-/*||Section & Article Styles*/
+/*||General Section Styles*/
 section {
     display: flex;
     flex-wrap: wrap;
@@ -114,20 +115,7 @@ section h3 {
     font-size: 200%;
 }
 
-article {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    padding: 5px;
-    border-bottom: 2px black solid;
-}
-
-article h3 {
-    font-family: "Blanks Script Font";
-    font-size: 200%;
-}
+/*changes the attributes of the spotify embed widget*/
 
 #spotify {
     width:50%;
@@ -136,26 +124,80 @@ article h3 {
     align-self: center;
 }
 
+/*||General Article Styles*/
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-self: space-between;
+    justify-content:flex-start;
+    align-content: center;
+    padding: 5px;
+    padding-right: 10%;
+    border-right: 2px solid black;
+    max-width: 25%;
+}
+
+article h3 {
+    font-family: "Blanks Script Font";
+}
+
+
+
+/*|| Form Styles*/
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-self: space-between;
+    padding: 5px;
+    padding-right: 10%;
+    border-right: 2px solid black;
+    max-width: 10%;
+}
+
+form ul {
+    list-style-type: none;
+}
+
+form textarea {
+border: 2px solid black;
+resize:vertical;
+}
+
 /*|| Card Styles*/
 
 .card {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    border-left: 2px black solid;
     border-right: 2px black solid;
-    padding: 20px;
-    margin: 20px;
+    padding-right: 5%;
+    padding-left: 5%;
     max-width: 250px;
 }
 
 
 .card img {
+    margin-top: 20px;
     max-width: 230px;
     max-height: 345px;
     justify-content: center;
 }
 
+.card:hover {
+    background-color: #E0D8B0;
+    padding: 5%;
+}
+
+.card:hover img,
+.card:hover a,
+.card:hover h3,
+.card:hover p {
+    background-color: #E0D8B0;
+}
 
 /*||Footer Styles*/
 
@@ -189,6 +231,60 @@ footer p {
 
 /*||Accessibility Styles*/
 
-@media screen and (max-width=968px) {
+@media screen and (max-width: 968px) {
+    header {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 5px;
+        border-bottom: 2px black solid;
+    }
     
+    header h1{
+        font-size: 48px;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        font-family: "Blanks Script Font";
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 5px;
+        border-bottom: 2px black solid;
+    }
+
+    article {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-self: space-between;
+        justify-content:flex-start;
+        align-content: center;
+        padding: 5px;
+        padding-right: 10%;
+        border-right: 2px solid black;
+        max-width: 25%;
+    }
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-self: space-between;
+        padding: 5px;
+        padding-right: 10%;
+        border-right: none;
+        border-bottom: 2px solid black;
+        max-width: 10%;
+    }
+
+    .card {
+       border-bottom:2px solid black;
+       border-right: none;
+       padding: 0%
+    }
 }

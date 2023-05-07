@@ -22,7 +22,7 @@
         </nav>
     </Header>
 
-    <!-- Section 1 - image background-->
+    <!-- Section 1 - About me-->
     <section id="section-1">
         
         <h3> What I'm listening to lately.</h3>
@@ -35,24 +35,54 @@
         </iframe>
     </section>
 
-    <!--Section 2 - Blurb paragraph-->
-    <article id="section-2">
-        <h3>Blurb paragraph</h3>
-        <p>Hello and welcome to my portfolio</p>
-    </article>
+    <!--Section 2 - Send me a message & Blurb paragraph-->
+    <section id="section-2">
+        <article>
+            <h3>Introduction</h3>
+            <p>
+             Hello and welcome to my portfolio! In this website you may find a collection of 
+             all the HTML, CSS, and JS projects I have worked on so far. In addition you will
+             find information about me, such as; who I am, where I am from, and what I look like.
+             Finally there are a few way to get in contact with me. To the right, there is a form to
+             input your message and contact information and at the bottom of the page you may find
+             my email, repository, and other socials.
+            </p>
+        </article>
+        <form>
+            <h3>Send me a message!</h3>
+            <ul>
+                 <li><label for="name">Name</label></li>
+                 <input id="name" type="text">
+
+                 <li><label for="email">Email</label></li>
+                 <input id="email" type="text">
+
+                 <li><label for="message">Message</label></li>
+                 <textarea id="name" placeholder="Enter your message here..." style="height:150px"></textarea>
+
+                <input id="submit" type="submit" value="Submit">
+            </ul>
+                
+        </form>
+    </section>
 
     <!--Section 3 - Project cards-->
     <section>
-        <div class="card">
-            <img src="./assets/b2780-5bhaeivISPG3.png">
-            <h3>Prework Project</h3>
+        <div class="card"><a href="https://aedelfrid.github.io/prework-study-guide/" target="_blank">
+            <img src="./assets/aedelfrid.github.io_prework-study-guide_.png">
+            <h3>Prework Study Guide</h3>
             <p>In this project I learned the very basics of HTML, CSS, and JS.</p>
-        </div>
-        <div class="card">
-            <img src="./assets/b2780-5bhaeivISPG3.png">
+        </a></div>
+        <div class="card"><a href="https://aedelfrid.github.io/SeorchLight/" target="_blank">
+            <img src="./assets/scrnshot.png">
             <h3>Module One</h3>
             <p>In this project I learned how to utilize semantic HTML</p>
-        </div>
+        </a></div>
+        <div class="card"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+            <img src="./assets/b2780-5bhaeivISPG3.png">
+            <h3>Coming soon...</h3>
+            <p>I'm working on new projects every day. Stay tuned for more...</p>
+        </a></div>
     </section>
 
     <!-- Footer-->
