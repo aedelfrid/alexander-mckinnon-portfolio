@@ -5,12 +5,14 @@
 My portfolio is a place to collect all of my completed prjects in a clean and stylish website. 
 
 ### Desktop Site
+<img src="./assets/img/portfolio-desktop.png">
 
 ### Mobile Site
+<img src="./assets/img/portfolio-iphone-xr.png">
 
 ## Installation
 
-You may access my portfolio via its url;
+You may access my portfolio via its url; https://aedelfrid.github.io/alexander-mckinnon-portfolio/
 
 ## License
 
