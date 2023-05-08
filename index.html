@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Site</title>
+    <title>Alex McKinnon's Portfolio</title>
   </head>
 
   <body>
@@ -13,73 +13,104 @@
     <Header>
         <h3>Welcome to my Portfolio!</h3>
         <h1 id="home">Home</h1>
+        <!--This section creates a navbar-->
         <nav>
             <ul>
-                <li><a class="active" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Home</a></li>
-                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Projects</a></li>
-                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">About me</a></li>
+                <li><a class="active" href="#section-1">Home</a></li>
+                <li><a href="#section-2">About me</a></li>
+                <li><a href="#section-3">Projects</a></li>
             </ul>
         </nav>
     </Header>
 
-    <!-- Section 1 - About me-->
+    <!-- Section 1 - Introduction -->
     <section id="section-1">
-        
-        <h3> What I'm listening to lately.</h3>
-        <iframe id="spotify"
-         style="border-radius:12px" 
-         src="https://open.spotify.com/embed/playlist/13ici4bSb5ytXfxlE62VcW?utm_source=generator" 
-          width="100%" height="352" frameBorder="0" allowfullscreen="" 
-         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-         loading="lazy">
-        </iframe>
-    </section>
-
-    <!--Section 2 - Send me a message & Blurb paragraph-->
-    <section id="section-2">
-        <article>
+        <!--This section introduces the website  -->
+        <article id="intro">
             <h3>Introduction</h3>
             <p>
-             Hello and welcome to my portfolio! In this website you may find a collection of 
+             Hello, my name is Alex McKinnon. Welcome to my portfolio! In this website you may find a collection of 
              all the HTML, CSS, and JS projects I have worked on so far. In addition you will
              find information about me, such as; who I am, where I am from, and what I look like.
-             Finally there are a few way to get in contact with me. To the right, there is a form to
+             Finally there are a few ways to get in contact with me. To the right and down, there is a form to
              input your message and contact information and at the bottom of the page you may find
              my email, repository, and other socials.
             </p>
         </article>
-        <form>
-            <h3>Send me a message!</h3>
+    </section>
+
+    <!--Section 2 - Send me a message & About me-->
+    <section id="section-2">
+        <!--This section is describes the author of this site -->
+        <article>
+            <img id="profile" src="./assets/img/aedelfrid.png" alt="an image of Alex McKinnon">
+            <div>
+                <h3> About me</h3>
+                <p>
+                    My name is Alex McKinnon. You may find me over the interwebs under names like aedelfrid or Fred.
+                    I go by He/They pronouns. Originally I come from Orangeville, Ontario, but I now reside in 
+                    Saint John, New Brunswick.
+                </p>
+                <p>
+                    I have a wealth of experience around computers and programming. From my days messing around with modding and
+                    hosting servers for video games such as Minecraft, to my day job which has me using and troubleshooting web-apps,
+                    and of course to the coding bootcamp I am currently partaking in. 
+                </p>
+                <p>
+                    I love learning new things and you can always find me engrossing myself in a new skill or hobby.
+                    From computer hardware & software, to music, current affairs, creative writing, gardening and more.
+                    You could say I aim to be something of a renaissance man. 
+                </p>
+            </div>
+        </article>
+        
+        <!--This section is a form to send me a message - however it is currently non-funtioning-->
+        <form id="send-message">
             <ul>
-                 <li><label for="name">Name</label></li>
-                 <input id="name" type="text">
+             <h3>Send me a message!</h3>
+             <li><label for="name">Name</label></li>
+             <input id="name" type="text">
 
-                 <li><label for="email">Email</label></li>
-                 <input id="email" type="text">
+             <li><label for="email">Email</label></li>
+             <input id="email" type="text">
 
-                 <li><label for="message">Message</label></li>
-                 <textarea id="name" placeholder="Enter your message here..." style="height:150px"></textarea>
+             <li><label for="message">Message</label></li>
+             <textarea id="name" placeholder="Enter your message here..." style="height:150px"></textarea>
 
-                <input id="submit" type="submit" value="Submit">
+             <input id="submit" type="submit" value="Submit">
             </ul>
-                
         </form>
+
+        <!--This section includes a spotify embed of a playlist the author made  -->
+        <section id="listen">
+            <h3> What I'm listening to lately.</h3>
+            <iframe
+               style="border-radius:12px" 
+               src="https://open.spotify.com/embed/playlist/13ici4bSb5ytXfxlE62VcW?utm_source=generator" 
+               width="100%" height="352" frameBorder="0" allowfullscreen="" 
+               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+               loading="lazy">
+            </iframe>
+        </section>
     </section>
 
     <!--Section 3 - Project cards-->
-    <section>
+    <section id="section-3">
+        <!--This section includes clickable "cards" which describe and link to previous projects-->
         <div class="card"><a href="https://aedelfrid.github.io/prework-study-guide/" target="_blank">
-            <img src="./assets/aedelfrid.github.io_prework-study-guide_.png">
+            <img src="./assets/img/aedelfrid.github.io_prework-study-guide_.png"alt="an image of my first project, the Prework Study Guide">
             <h3>Prework Study Guide</h3>
-            <p>In this project I learned the very basics of HTML, CSS, and JS.</p>
+            <p>In this project we learned the very basics of HTML, CSS, and JS and created a website to collate all the information
+                we learn over the course of the bootcamp.
+            </p>
         </a></div>
         <div class="card"><a href="https://aedelfrid.github.io/SeorchLight/" target="_blank">
-            <img src="./assets/scrnshot.png">
+            <img src="./assets/img/scrnshot.png" alt="An image of my second project, a refactoring of prior code, SeorchLight">
             <h3>Module One</h3>
-            <p>In this project I learned how to utilize semantic HTML</p>
+            <p>In this project we learned how to utilize semantic HTML and learned the importance of commenting on your code.</p>
         </a></div>
-        <div class="card"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-            <img src="./assets/b2780-5bhaeivISPG3.png">
+        <div class="card" id="last"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+            <img src="./assets/img/b2780-5bhaeivISPG3.png" alt="A placeholder image">
             <h3>Coming soon...</h3>
             <p>I'm working on new projects every day. Stay tuned for more...</p>
         </a></div>
@@ -90,9 +121,9 @@
         <div class="contact-me">
             <p>Contact me</p>
             <ul>
-                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Email</a></li>
-                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">LinkedIn</a></li>
-                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">GitHub</a></li>
+                <li><a href="mailto:almck51@gmail.com" target="_blank">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/alex-mckinnon-8b4381155/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/aedelfrid" target="_blank">GitHub</a></li>
             </ul>
         </div>
         <p>Made with love by Alexander McKinnon</p>
